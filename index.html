@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Random Quote Generator</title>
+</head>
+<body>
+  <div>
+    <div class="App">
+      <div class="textBox">
+        <div class="container">
+          <div class="quote">
+            <h1 id="quote">" My Friend! "</h1>
+            <h3 id="author"> - eemeelyo - </h3>
+          </div>
+          <div>
+            <button onclick="getQuote()" type="button" class="btn">Get Quote</button>
+          </div>
+          <form action="/action_page.php">
+            <input value="" autocomplete="off" type="text" id="inputName" class="inputBox"name="inputName" placeholder="Name">
+            <br>
+            <input value="" autocomplete="off" type="text" id="inputQuote" class="inputBox" name="inputQuote" placeholder="Your Best Line!""><br><br>
+            <button onclick="addQuote()" type="button" class="btn">Add Quote</button>
+          </form> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="app.js"></script>
+</body>
+</html>
