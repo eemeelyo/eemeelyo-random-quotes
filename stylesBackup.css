@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#page-wrap {
+  width: 800px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: aquamarine;
+  
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.container{
+  border: 10px solid orange;
+  height: 85vh;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: burlywood;
+  border-radius: 30px;
+  word-wrap: break-word;
+  /* display:flex; */
+}
+
+button {
+  background-color: #e27501;
+  border-radius: 30px;
+  border: 2px solid gray;
+  display:inline-block;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-shadow: 1px;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: aquamarine;
+  
+}
+
+.textBox {
+  position: absolute;
+  background-color: bisque;
+  width: 90%;
+  height: 90vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em ;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.quote{
+  margin-top: 20px;
+  max-width: 85vw;
+  max-height: 60vh;
+}
+
+h1#quote {
+    font-size : clamp(2rem, 10vw, 5rem);
+    margin: 10px;
+    position: relative;
+    text-align: center;
+}
+
+button:hover{
+  background-color: #f5ba13;
+  color: #a4005f;
+}
+
+button:active{
+  position:relative;
+  top: 1px;
+}
+
+span.quotations{
+  font-size: 1.5em;
+  font-weight: 1000;
+}
+
+form {
+  position: absolute;
+bottom:44px;
+  width: 80%;
+  text-align: center;
+  /* border: 3px solid #8AC007; */
+}
+
+input {
+  height: 50px;
+  width: 70%;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  
+}
+
+.inputBox {
+  padding: 20px;
+}
+
+#inputQuote {
+  height: 80px;
+  
+}
+
+#submitBtn {
+  background-color: #e27501;
+}
+
+
+
+@media(max-width:768px){
+  h1#quote {
+    font-size: 50px;
+    
+  }
+  form {
+    bottom: 20px;
+  }
+  input#inputName {
+    height: 10px;
+  }
+  input#inputQuote {
+    height: 10px;
+    margin-bottom: 0px;
+  }
+  button.bt {
+    margin-top: 0px;
+  }
+  .quote {
+    max-height: 43vh;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+
+
+@media(max-width:480px){
+  h1#display {
+    font-size: 50px;
+  }
+}
+
+
+
+@media(max-width:320px){
+  h1#quote {
+    font-size: 30px;
+  }
+  form {
+    right: 25px;
+  }
+}
+
+@media(max-width: 240px){
+  h1#quote {
+    font-size: 20px;
+  }
+  h3#author {
+    font-size: 10px;
+  }
+  form {
+    right: 20px;
+  }
+
+  
+}
+
+

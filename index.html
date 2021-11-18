@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
   <title>Random Quote Generator</title>
 </head>
+
 <body>
-  <div>
-    <div class="App">
-      <div class="textBox">
-        <div class="container">
-          <div class="quote">
-            <h1 id="quote">" My Friend! "</h1>
-            <h3 id="author"> - eemeelyo - </h3>
-          </div>
-          <div>
-            <button onclick="getQuote()" type="button" class="btn">Get Quote</button>
-          </div>
-          <form action="/action_page.php">
-            <input value="" autocomplete="off" type="text" id="inputName" class="inputBox"name="inputName" placeholder="Name">
-            <br>
-            <input value="" autocomplete="off" type="text" id="inputQuote" class="inputBox" name="inputQuote" placeholder="Your Best Line!""><br><br>
-            <button onclick="addQuote()" type="button" class="btn">Add Quote</button>
-          </form> 
-        </div>
-      </div>
+  <div class="container">
+    <div class="quoteArea">
+      <h1 id="quote">" My Friend! "</h1>
     </div>
+    <div class="authorArea">
+      <h3 id="author"> - eemeelyo - </h3>
+    </div>
+    <div id="getButton">
+      <button onclick="getQuote()" type="button" class="btn">Get Quote</button>
+    </div>
+    <div class="formArea">
+      <form>
+        <h4>Add your quote.</h4>
+        <input value="" autocomplete="off" type="text" id="inputName" class="inputBox" name="inputName"
+          placeholder="Name">
+        <br>
+        <input value="" autocomplete="off" type="text" id="inputQuote" class="inputBox" name="inputQuote"
+          placeholder="Your Quote?!"><br><br>
+          <div>
+            <button id="addButton" onclick="addQuote()" type="button" class="btn">+</button>
+    </div>
+    </form>
   </div>
-</div>
+  </div>
+  </div>
+  </div>
   <script src="app.js"></script>
 </body>
+
 </html>
