@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/55a775b96e.js" crossorigin="anonymous"></script>
   <title>Random Quote Generator</title>
 </head>
 
@@ -25,17 +26,16 @@
     </div>
     <div class="formArea">
       <form>
-        <h4>Add your quote.</h4>
         <input value="" autocomplete="off" type="text" id="inputName" class="inputBox" name="inputName"
           placeholder="Name">
-        <br>
         <input value="" autocomplete="off" type="text" id="inputQuote" class="inputBox" name="inputQuote"
-          placeholder="Your Quote?!"><br><br>
-          <div>
-            <button id="addButton" onclick="addQuote()" type="button" class="btn">+</button>
+          placeholder="Add your Quote?!"><br>
+      </form>
+      <div id="addBtn">
+        <button class="fas fa-plus-circle" id="addButton" onclick="addQuote()" type="button"></button>
+      </div>
+      </form>
     </div>
-    </form>
-  </div>
   </div>
   </div>
   </div>

@@ -12,19 +12,22 @@ body {
 .container {
   border: 10px solid orange;
   height: 90vh;
-  width: 50%;
+  width: 90%;
   text-align: center;
   margin: 30px auto;
-  /* background-color: burlywood; */
+  background-color: burlywood;
   border-radius: 30px;
   word-wrap: break-word;
   font-family: 'Courgette', cursive;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 671px;
 }
 
 .quoteArea {
-  margin: 30px;
+  margin: 10px;
   /* height: 400px; */
-  border: 1px solid green;
+  /* border: 1px solid green; */
   position: relative;
   /* background: url(images/autumn.jpg) center center no-repeat;  */
   /* line-height: 350px; */
@@ -32,32 +35,41 @@ body {
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
   /* height: 500px; */
+  word-wrap: break-word;
+  width: 100%;
+  color:blueviolet;
   
 }
 
 #quote {
-  height: 400px;
+  width: 100%;
   /* line-height: 400px; */
   text-align: center;
-  margin: auto;
+  margin: 0;
   font-size: 5em;
-  border: 1px solid black;
-  word-wrap: break-word;
-  font-size : clamp(2rem, 10vw, 5rem);
-  
+  /* border: 1px solid black; */
+  /* font-size : clamp(1rem, 10vw, 1rem); */
+  font-size: 1rem;
+  /* height: 100px; */
+}
+h1#quote {
+  font-size : clamp(1rem, 10vw, 2.5rem);
 }
 
 .authorArea {
-  margin: 0 30px 0 30px;
+  margin: auto;
   position: relative;
-
+  width: 100%;
+  color:blueviolet;
+  
 }
 
 #author {
   font-size: 2em;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   text-align: right;
   padding-right: 20px;
+  font-size : clamp(1rem, 6vw, 1.8rem);
 }
 
 .btn {
@@ -70,27 +82,113 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   margin: 10px;
-  padding: 10px 20px;
+  padding: 5px 20px;
   text-decoration: none;
   text-shadow: 1px;
 }
 
+#getButton{
+  width: 100%;
+}
+
+form{
+  width: 100%;
+  margin-bottom: 0%;
+}
+
 .formArea {
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  width: 100%;
+  justify-content: center;
+
 }
 
 form h4 {
   margin: 10px;
 }
 input {
-  font-size: 2em;
-  border-radius: 30px;
-  margin: 3px;
+  border-radius: 10px;
+  margin: 3px 0;
+  width: 100%;
+  font-size : clamp(1rem, 6vw, 1.8rem);
 }
+
+
+input#inputName.inputBox {
+  font-size: 1rem;
+  border-radius: 10px;
+  width: 90%;
+  height: 2em;
+} 
+input#inputQuote.inputBox {
+  font-size: 1rem;
+  width: 90%;
+  height: 4em;
+  margin-bottom: 10px;
+} 
 
 #addButton {
   font-weight: 1000;
   margin: 0;
-
+  padding: 0;
+  font-size: 2.5em;
+  border-radius: 100px;
+  color: #e27501;
 }
 
+#addBtn {
+  margin: 0%;
+}
+button:hover{
+  background-color: #f5ba13;
+  color: #a4005f;
+}
+
+button:active{
+  position:relative;
+  top: 1px;
+}
+
+/* @media(max-width:480px){
+  h1#quote {
+    font-size: 2rem;
+    height: 90px;
+  }
+  #inputQuote {
+    height: 2em;
+  } 
+} */
+
+/* @media(max-width:768px){
+  h1#quote {
+    font-size: 3.5rem;
+    height: 120rem;
+    margin-bottom: 10rem;
+  }
+  input#inputName.inputBox{
+    font-size: 2rem;
+  }
+  input#inputQuote.inputBox {
+    font-size: 2rem;
+  } 
+  h3#author {
+    font-size: 2rem;
+  }
+  button.btn{
+    font-size: 2rem;
+  }
+  button#addButton.fas.fa-plus-circle::before {
+    font-size: 5rem;
+  }
+
+} */
+
+/* @media(max-width:1024px){
+  #quote {
+    font-size: 3.5rem;
+    height: 190px;
+  }
+  #inputQuote {
+    height: 3em;
+  } 
+} */
