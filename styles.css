@@ -149,46 +149,39 @@ button:active{
   top: 1px;
 }
 
-/* @media(max-width:480px){
+@media (min-width: 700px) {
   h1#quote {
-    font-size: 2rem;
-    height: 90px;
+    font-size: 4rem;
   }
-  #inputQuote {
-    height: 2em;
-  } 
-} */
-
-/* @media(max-width:768px){
-  h1#quote {
-    font-size: 3.5rem;
-    height: 120rem;
-    margin-bottom: 10rem;
-  }
-  input#inputName.inputBox{
-    font-size: 2rem;
-  }
-  input#inputQuote.inputBox {
-    font-size: 2rem;
-  } 
   h3#author {
     font-size: 2rem;
   }
-  button.btn{
+  .btn {
     font-size: 2rem;
   }
   button#addButton.fas.fa-plus-circle::before {
     font-size: 5rem;
   }
-
-} */
-
-/* @media(max-width:1024px){
-  #quote {
-    font-size: 3.5rem;
-    height: 190px;
+  input#inputName.inputBox {
+    font-size: 2rem;
   }
-  #inputQuote {
-    height: 3em;
-  } 
-} */
+  input#inputQuote.inputBox {
+    font-size: 2rem;
+  }
+}
+
+
+@media (orientation: landscape) and (min-width: 1024px) {
+ h1#quote {
+   font-size: 3rem;
+ }
+ h3#author {
+   font-size: 1.5rem;
+ }
+ .btn {
+   font-size: 1rem;
+ }
+ button#addButton.fas.fa-plus-circle::before {
+   font-size: 3rem;
+ }
+}
